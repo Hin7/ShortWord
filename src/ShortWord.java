@@ -2,7 +2,7 @@
  * Task #2037 SGU (Too short words)
  *
  * @author Hin7
- * @version 1.1 04.02.2020
+ * @version 1.1 04.03.2020
  */
 
 import java.io.IOException;
