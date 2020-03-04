@@ -17,8 +17,8 @@ public class ShortWord { // when send to SGU, change class name to Solution
             PrintWriter out = new PrintWriter("output.txt", "UTF-8");
             String InS = in.nextLine();
             int n = in.nextInt();
-            String[] Words = InS.split(",", 1001);
-            System.out.println(Words.length);
+            String[] Words = InS.split(",", 1000);
+            //System.out.println(Words.length);
             boolean FirstWord = true;
             for(String Word : Words){
                 if (Word.length() >= n){
@@ -26,6 +26,8 @@ public class ShortWord { // when send to SGU, change class name to Solution
                     FirstWord = false;
                 }
             }
+            if(FirstWord)
+                out.println("");
             out.close();
         } catch (IOException e){
             e.printStackTrace();
